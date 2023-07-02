@@ -1,3 +1,4 @@
+import { TypeAnimation } from 'react-type-animation';
 import photo from '../../assets/photo.jpg'
 
 const Home = () => {
@@ -6,7 +7,26 @@ const Home = () => {
             <div className='md:w-1/2'>
                 <h3 className="text-2xl font-bold text-white">Hello I am</h3>
                 <h1 className="text-5xl font-bold text-white my-7">Habibur Rahman</h1>
-                <h4 className="font-bold text-xl">I am Professional Web Developer</h4>
+                <h4 className=" text-lg">
+                    <TypeAnimation className='text-primary'
+                        sequence={[
+                            // Same substring at the start will only be typed once, initially
+                            'I am Professional Front-End Developer',
+                            1000,
+                            'I am Professional Mearn Stack Developer',
+                            1000,
+                            'I am Professional React Developer',
+                            1000,
+
+                        ]}
+                        speed={50}
+                        style={{ fontSize: '1.2em' }}
+                        repeat={Infinity}
+                    />
+                </h4>
+
+
+
                 <p className="mt-5 text-lg font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni, fugiat tempora dignissimos iure minima assumenda animi reprehenderit repellendus commodi!</p>
                 <button className='btn btn-primary rounded-sm text-white mt-8'>Download Resume</button>
             </div>
