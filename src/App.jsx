@@ -1,5 +1,8 @@
 import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
+import MyProjects from "./components/MyProjects/MyProjects";
+import MySkills from "./components/MySkills/MySkills";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 
@@ -12,6 +15,9 @@ const App = () => {
       <div className="md:col-span-4  md:pl-16 ">
         <Home />
         <About />
+        <MySkills/>
+        <MyProjects/>
+        <Contact/>
       </div>
     </div>
   );

@@ -8,75 +8,80 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { GiSkills } from "react-icons/gi";
 const Sidebar = () => {
     return (
-        <div className="pt-10  h-screen relative">
+        <div className="pt-10 fixed h-screen ">
             <div className='flex justify-center items-center flex-col'>
                 <img className='w-28 h-28 rounded-full border-4 border-primary' src={photo} alt="" />
                 <h3 className='text-xl text-white mt-3'>Habibur Rahman</h3>
             </div>
             <nav className='my-20 pl-8'>
                 <ul className='flex flex-col text-md '>
-                    <li className='inline-flex items-center cursor-pointer hover:text-primary mb-5'>
-                        <span className='mr-2 text-xl'>  <BiHomeAlt2 /></span>
+                    <li className='cursor-pointer hover:text-primary mb-5'>
+                        
                         <Link
-                            to="section1"
+                            to="home"
                             spy={true}
                             smooth={true}
                             duration={500}
-                            activeClass="active"
-                            className='hover:tracking-[5px]  duration-300'
+                            activeClass="text-primary"
+                            className='hover:tracking-[5px]  duration-300 inline-flex items-center '
                         >
+                            <span className='mr-2 text-xl'>  <BiHomeAlt2 /></span>
                             Home
                         </Link>
                     </li>
-                    <li className='inline-flex items-center cursor-pointer hover:text-primary mb-5'>
-                        <span className='mr-2 text-xl'>  <BiSolidUserDetail /></span>
+                    <li className='cursor-pointer hover:text-primary mb-5'>
+                        
                         <Link
-                            to="section1"
+                            to="about me"
                             spy={true}
                             smooth={true}
                             duration={500}
-                            activeClass="active"
-                            className='hover:tracking-[5px]  duration-300'
+                            activeClass="text-primary"
+                            className='hover:tracking-[5px]  duration-300 inline-flex items-center '
                         >
+                            <span className='mr-2 text-xl'>  <BiSolidUserDetail /></span>
                             About Me
                         </Link>
                     </li>
-                    <li className='inline-flex items-center cursor-pointer hover:text-primary mb-5'>
-                        <span className='mr-2 text-xl'>  <GiSkills /></span>
+                    <li className='cursor-pointer hover:text-primary mb-5'>
+                       
                         <Link
-                            to="section1"
+                            to="skills"
                             spy={true}
                             smooth={true}
                             duration={500}
-                            activeClass="active"
-                            className='hover:tracking-[5px]  duration-300'
+                            activeClass="text-primary"
+                            className='hover:tracking-[5px]  duration-300 inline-flex items-center '
                         >
+                             <span className='mr-2 text-xl'>  <GiSkills /></span>
                             My Skills
                         </Link>
                     </li>
-                    <li className='inline-flex items-center cursor-pointer hover:text-primary mb-5'>
-                        <span className='mr-2 text-xl'>  <GoProjectSymlink /></span>
+                    <li className='cursor-pointer hover:text-primary mb-5'>
+                        
                         <Link
-                            to="section1"
+                            to="projects"
                             spy={true}
                             smooth={true}
                             duration={500}
-                            activeClass="active"
-                            className='hover:tracking-[5px]  duration-300'
+                            activeClass="text-primary"
+                            className='hover:tracking-[5px]  duration-300 inline-flex items-center '
                         >
+                            <span className='mr-2 text-xl'>  <GoProjectSymlink /></span>
                             Projects
                         </Link>
                     </li>
                     <li className='inline-flex items-center cursor-pointer hover:text-primary mb-5'>
-                        <span className='mr-2 text-xl'>  <BiSolidContact /></span>
+                       
                         <Link
-                            to="section1"
+                            to="contact"
                             spy={true}
                             smooth={true}
                             duration={500}
-                            activeClass="active"
-                            className='hover:tracking-[5px]  duration-300'
+                            activeClass="text-primary"
+                            className='hover:tracking-[5px]  duration-300 inline-flex items-center'
                         >
+                             <span className='mr-2 text-xl'>  <BiSolidContact /></span>
                             Contact Me
                         </Link>
                     </li>
