@@ -2,7 +2,7 @@
 
 const Underline = ({ lineLength }) => {
     return <>
-        <hr className={`border-2 rounded-full w-[200px] border-primary mx-auto`} />
+        <hr className={`border-2 rounded-full w-[200px] border-primary mx-auto mb-16`} />
     </>
 
 };

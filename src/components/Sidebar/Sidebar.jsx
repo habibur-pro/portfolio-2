@@ -97,7 +97,7 @@ const Sidebar = ({ open, setOpen }) => {
                         </li>
                         <li className='inline-flex items-center cursor-pointer hover:text-primary mb-5'>
                             <button className='btn btn-primary btn-sm text-white font-normal rounded-sm'>
-                                <a href={Resume} download="Resume"> Download Resume</a>
+                                <a href={Resume} download="Resume" >Download Resume</a>
                             </button>
                         </li>
 
@@ -110,7 +110,12 @@ const Sidebar = ({ open, setOpen }) => {
                                 <FaFacebookF />
                             </a>
                         </li>
-                        <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'><FaLinkedinIn /></li>
+                        <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'>
+                            <a href="https://www.linkedin.com/in/md-habibur-rahman-76b213224/">
+                                <FaLinkedinIn />
+                            </a>
+
+                        </li>
                         <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'>
                             <a href="https://github.com/habibur-pro">
                                 <FaGithub />
