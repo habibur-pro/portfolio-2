@@ -1,3 +1,4 @@
+import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Sidebar from "./components/Sidebar/Sidebar";
 
@@ -10,6 +11,7 @@ const App = () => {
       </div>
       <div className="md:col-span-4  md:pl-16 ">
         <Home />
+        <About />
       </div>
     </div>
   );
