@@ -6,14 +6,17 @@ import MyProjects from "./components/MyProjects/MyProjects";
 import MySkills from "./components/MySkills/MySkills";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { useState } from "react";
-import * as Scroll from 'react-scroll';
+
+
 
 
 const App = () => {
   const [open, setOpen] = useState(false)
+
   console.log(open)
   const handleSidebar = (value) => {
     setOpen(value);
+
   }
   return (
     <>

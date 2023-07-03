@@ -4,9 +4,9 @@ import { BiHomeAlt2 } from "react-icons/bi";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BiSolidUserDetail, BiSolidContact } from "react-icons/bi";
 import { GoProjectSymlink } from "react-icons/go";
-import { RxHamburgerMenu } from "react-icons/rx";
 import { GiSkills } from "react-icons/gi";
-import * as Scroll from 'react-scroll';
+import Resume from '../../assets/Resume.pdf'
+
 const Sidebar = ({ open, setOpen }) => {
 
 
@@ -96,16 +96,26 @@ const Sidebar = ({ open, setOpen }) => {
                             </Link>
                         </li>
                         <li className='inline-flex items-center cursor-pointer hover:text-primary mb-5'>
-                            <button className='btn btn-primary btn-sm text-white font-normal rounded-sm'>Download Resume</button>
+                            <button className='btn btn-primary btn-sm text-white font-normal rounded-sm'>
+                                <a href={Resume} download="Resume"> Download Resume</a>
+                            </button>
                         </li>
 
                     </ul>
                 </nav>
                 <div className='pl-8 text-lg absolute md:bottom-10'>
                     <ul className='text-md flex  gap-x-4  '>
-                        <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'><FaFacebookF /></li>
+                        <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'>
+                            <a href="https://www.facebook.com/profile.php?id=100088009747582">
+                                <FaFacebookF />
+                            </a>
+                        </li>
                         <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'><FaLinkedinIn /></li>
-                        <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'><FaGithub /></li>
+                        <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'>
+                            <a href="https://github.com/habibur-pro">
+                                <FaGithub />
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

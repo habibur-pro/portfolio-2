@@ -1,6 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import photo from '../../assets/photo.jpg'
-
+import Resume from '../../assets/Resume.pdf'
 const Home = () => {
     return (
         <div id='home' className='md:flex my-10 justify-between md:gap-10 min-h-screen items-center  w-full'>
@@ -28,7 +28,9 @@ const Home = () => {
 
 
                 <p className="mt-5 text-lg font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni, fugiat tempora dignissimos iure minima assumenda animi reprehenderit repellendus commodi!</p>
-                <button className='btn btn-primary rounded-sm text-white mt-8'>Download Resume</button>
+                <button className='btn btn-primary rounded-sm text-white mt-8'>
+                    <a href={Resume}>Download Resume</a>
+                </button>
             </div>
             <div className='md:w-1/2 mt-5 md:my-auto'>
                 <img className=' rounded-full' src={photo} alt="" />
