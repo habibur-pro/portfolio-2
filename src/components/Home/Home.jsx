@@ -28,7 +28,8 @@ const Home = () => {
 
 
 
-                <p className="mt-5 text-lg font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magni, fugiat tempora dignissimos iure minima assumenda animi reprehenderit repellendus commodi!</p>
+                <p className="mt-5 text-lg font-normal">Passionate about creating visually appealing, user-friendly websites. Seeking opportunities to drive innovation, exceed
+                    client expectations, and advance my career in web development.</p>
                 <button className='btn btn-primary mr-5 rounded-sm text-white mt-8'>
                     <a href={Resume} download >Download Resume</a>
                 </button>
