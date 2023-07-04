@@ -1,8 +1,8 @@
 
 
-const Underline = ({ lineLength }) => {
+const Underline = () => {
     return <>
-        <hr className={`border-2 rounded-full w-[300px] border-primary mx-auto mb-16`} />
+        <hr className={`border-2 rounded-full mt-2 w-full md:w-[300px] border-primary mx-auto mb-16`} />
     </>
 
 };

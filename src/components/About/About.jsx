@@ -1,4 +1,4 @@
-import Underline from "../Underline";
+// import Underline from "../Underline";
 import photo from '../../assets/photo.jpg'
 import Resume from '../../assets/Resume.pdf'
 import { Link } from "react-scroll";
