@@ -13,7 +13,7 @@ import { useState } from "react";
 const App = () => {
   const [open, setOpen] = useState(false)
 
-  console.log(open)
+
   const handleSidebar = (value) => {
     setOpen(value);
 
@@ -23,7 +23,7 @@ const App = () => {
       <div className="max-w-[1500px] mx-auto ">
         <div className='text-3xl text-white md:hidden w-full fixed z-10 bg-base-100 '><RxHamburgerMenu
           onClick={() => handleSidebar(!open)}
-          className={`absolute top-2 right-5  ${open ? "text-primary" : ''}`}
+          className={`absolute  right-10  ${open ? "text-primary" : ''}`}
         /></div>
         <div className="md:grid grid-cols-6 px-3 md:px-0 relative">
 

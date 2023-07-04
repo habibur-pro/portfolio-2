@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const MyProjects = () => {
     return (
         <div className="py-20" id="projects">
-            <h1 className="text-3xl text-center">My Projects</h1>
+            <h1 className="text-5xl font-bold text-center">My Projects</h1>
             <Underline />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -128,7 +128,7 @@ const MyProjects = () => {
                     </div>
                     <div className="p-3 bg-secondary ">
                         <h3 className="text-primary text-xl font-bold">Dashboard</h3>
-                        <p className="text-md mb-3 text-sm">Dashboard menu changed by user role. Secure from unAuthorize user. user, teacher or admin can not access to other user data.<br /> <span className="text-warning">Admin Email: admin@gmail.com Password:#@Admin</span></p>
+                        <p className="text-md mb-3 text-sm">Dashboard menu changed by user role. Secure from unAuthorize user. user, teacher or admin can not access to other user data.<br /> <span className="text-warning font-bold">Admin Email: admin@gmail.com <br /> Password: #@Admin</span></p>
                         <div className="flex flex-wrap gap-2">
                             <p className="bg-primary text-xs px-3 py-1 rounded-full text-white ">Html</p>
                             <p className="bg-primary text-xs px-3 py-1 rounded-full text-white ">Css</p>

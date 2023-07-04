@@ -6,13 +6,14 @@ import { BiSolidUserDetail, BiSolidContact } from "react-icons/bi";
 import { GoProjectSymlink } from "react-icons/go";
 import { GiSkills } from "react-icons/gi";
 import Resume from '../../assets/Resume.pdf'
+import { Link as RouterLink } from 'react-router-dom'
 
 const Sidebar = ({ open, setOpen }) => {
 
 
     return (
         <>
-            <div className={`${open ? "left-0 " : "-left-[100%]"}  bg-base-100 w-3/4 md:w-auto  duration-200 md:pt-10  top-0  fixed  md:left-0  md:min-h-screen   `}>
+            <div className={`${open ? "left-0 " : "-left-[100%]"}  bg-base-100 w-3/4 md:w-auto  duration-200 md:pt-10  top-0 h-full z-50 md:z-auto fixed  md:left-0  md:min-h-screen   `}>
                 <div className='flex justify-center items-center flex-col'>
                     <img className='w-28 h-28 rounded-full border-4 border-primary' src={photo} alt="" />
                     <h3 className='text-xl text-white mt-3'>Habibur Rahman</h3>
@@ -106,20 +107,20 @@ const Sidebar = ({ open, setOpen }) => {
                 <div className='pl-8 text-lg absolute md:bottom-10'>
                     <ul className='text-md flex  gap-x-4  '>
                         <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'>
-                            <a href="https://www.facebook.com/profile.php?id=100088009747582">
+                            <RouterLink to="https://www.facebook.com/profile.php?id=100088009747582" target='_blank'>
                                 <FaFacebookF />
-                            </a>
+                            </RouterLink>
                         </li>
                         <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'>
-                            <a href="https://www.linkedin.com/in/md-habibur-rahman-76b213224/">
+                            <RouterLink to="https://www.linkedin.com/in/md-habibur-rahman-76b213224/" target='_blank'>
                                 <FaLinkedinIn />
-                            </a>
+                            </RouterLink>
 
                         </li>
                         <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'>
-                            <a href="https://github.com/habibur-pro">
+                            <RouterLink to="https://github.com/habibur-pro" target='_blank'>
                                 <FaGithub />
-                            </a>
+                            </RouterLink>
                         </li>
                     </ul>
                 </div>

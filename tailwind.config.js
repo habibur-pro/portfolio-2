@@ -12,9 +12,11 @@ export default {
     themes: [
       {
         dark: {
-          "primary": "#ff5d56",
+          // "primary": "#ff5d56",
+          "primary": "#BD10E0",
           "secondary": "#494965",
-          "accent": "#37cdbe",
+          // "accent": "#37cdbe",
+          "accent": "#8e12fc",
           "neutral": "#3d4451",
           "base-100": "#10101a",
         },
