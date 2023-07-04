@@ -12,7 +12,7 @@ const Sidebar = ({ open, setOpen }) => {
 
     return (
         <>
-            <div className={`${open ? "left-0 " : "-left-[100%]"}  bg-base-100 w-3/4 md:w-auto  duration-200 md:pt-10 absolute top-0 md:fixed  md:left-0 h-full md:min-h-screen  md:block `}>
+            <div className={`${open ? "left-0 " : "-left-[100%]"}  bg-base-100 w-3/4 md:w-auto  duration-200 md:pt-10  top-0  fixed  md:left-0  md:min-h-screen   `}>
                 <div className='flex justify-center items-center flex-col'>
                     <img className='w-28 h-28 rounded-full border-4 border-primary' src={photo} alt="" />
                     <h3 className='text-xl text-white mt-3'>Habibur Rahman</h3>
@@ -97,7 +97,7 @@ const Sidebar = ({ open, setOpen }) => {
                         </li>
                         <li className='inline-flex items-center cursor-pointer hover:text-primary mb-5'>
                             <button className='btn btn-primary btn-sm text-white font-normal rounded-sm'>
-                                <a href={Resume} download="Resume" >Download Resume</a>
+                                <a href={Resume} download >Download Resume</a>
                             </button>
                         </li>
 
