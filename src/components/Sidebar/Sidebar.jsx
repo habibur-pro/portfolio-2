@@ -14,8 +14,8 @@ const Sidebar = ({ open, setOpen }) => {
     return (
         <>
             <div className={`${open ? "left-0 " : "-left-[100%]"}  bg-base-100 w-3/4 md:w-auto  duration-200 md:pt-10  top-0 h-full z-50 md:z-auto fixed  md:left-0  md:min-h-screen   `}>
-                <div className='flex justify-center items-center flex-col'>
-                    <img className='w-28 h-28 rounded-full border-4 border-primary' src={photo} alt="" />
+                <div className='flex justify-center items-center flex-col pt-10 md:pt-0'>
+                    <img className='w-28 h-28 rounded-full border-4 border-primary ' src={photo} alt="" />
                     <h3 className='text-xl text-white mt-3'>Habibur Rahman</h3>
                 </div>
                 <nav className='my-20 pl-8'>

@@ -18,7 +18,7 @@ const About = () => {
 
                     <h2 className="text-2xl font-bold mb-3 ">Front-End Developer</h2>
                     <p className="text-justify">
-                        I am Habibur Rahman a Front-end Developer. I am parsing BSS at National University of Bangladesh. I have proficiency on HTML, CSS, Javascript, React Js, Node Js, Express Js, Mongodb and many more. I have completed more than 20 projects including 2 full stack projects. I am self motivated and hard working person. I am capable to write clean and reusable code. I am capable to adapt new technology in short time. As a web developer my goal is deliver outstanding web experiences that prioritize user satisfaction.
+                        I am Habibur Rahman a Front-end Developer. I am parsing BSS at the National University of Bangladesh. I have proficiency in HTML, CSS, Javascript, React Js, Node Js, Express Js, MongoDB, and many more. I have completed more than 20 projects including 2 full-stack projects. I am a self-motivated and hard-working person. I am capable of writing clean and reusable code. I am qualified to adapt to new technology in a short time. As a web developer, my goal is to deliver outstanding web experiences that prioritize user satisfaction.
                     </p>
                     <button className='btn btn-primary mr-5 mt-5 text-white font-normal rounded-sm'>
                         <a href={Resume} download >Download Resume</a>

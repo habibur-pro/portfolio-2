@@ -36,6 +36,10 @@ const App = () => {
             <MySkills />
             <MyProjects />
             <Contact />
+            <hr className="bg-primary border-primary border-2" />
+            <div>
+              <p className="text-center py-5 text-white">Copyright © 2023 - All right reserved by Habibur Rahman</p>
+            </div>
           </div>
         </div>
       </div>
