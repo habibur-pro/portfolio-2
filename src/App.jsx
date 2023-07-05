@@ -6,6 +6,7 @@ import MyProjects from "./components/MyProjects/MyProjects";
 import MySkills from "./components/MySkills/MySkills";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { useState } from "react";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -36,10 +37,7 @@ const App = () => {
             <MySkills />
             <MyProjects />
             <Contact />
-            <hr className="bg-primary border-primary border-2" />
-            <div>
-              <p className="text-center py-5 text-white">Copyright © 2023 - All right reserved by Habibur Rahman</p>
-            </div>
+            <Footer />
           </div>
         </div>
       </div>
