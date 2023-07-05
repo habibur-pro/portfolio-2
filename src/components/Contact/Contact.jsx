@@ -4,6 +4,13 @@ import MailAnimation from '../../assets/Mail.json';
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import { Toaster, toast } from "react-hot-toast";
+import 'aos/dist/aos.css';
+import Aos from "aos";
+// ..
+Aos.init({
+    duration: 1000,
+    easing: 'ease in out',
+});
 
 const Contact = () => {
     const defaultOptions = {
@@ -31,10 +38,10 @@ const Contact = () => {
     return (
         <div className="py-20" id="contact">
             <div className="md:flex justify-between items-center">
-                <div className="md:w-1/2">
+                <div className="md:w-1/2" data-aos='fade-right'>
                     <Lottie options={defaultOptions} />
                 </div>
-                <div className="md:w-1/2 ">
+                <div className="md:w-1/2 " data-aos='fade-up'>
                     <h1 className="text-5xl font-bold mb-10 text-primary">Contact With Me</h1>
                     <form ref={form} onSubmit={sendEmail} className="w-full" action="">
                         <div className="mb-5">

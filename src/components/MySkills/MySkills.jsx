@@ -10,10 +10,17 @@ import expressLogo from '../../assets/logo/express_logo.png'
 import mongodbLogo from '../../assets/logo/mongodb_logo.png'
 import firebaseLogo from '../../assets/logo/firebase_logo.png'
 import nextLogo from '../../assets/logo/next_logo.png'
+import 'aos/dist/aos.css';
+import Aos from "aos";
+// ..
+Aos.init({
+    duration: 1000,
+    easing: 'ease in out',
+});
 
 const MySkills = () => {
     return (
-        <div id="skills" className="my-20">
+        <div id="skills" className="my-20" data-aos='fade-up'>
             <h1 className="text-center text-5xl font-bold ">My Skills
             </h1>
             <Underline />

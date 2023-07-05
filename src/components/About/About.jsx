@@ -2,18 +2,24 @@
 import photo from '../../assets/photo.jpg'
 import Resume from '../../assets/Resume.pdf'
 import { Link } from 'react-router-dom'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    easing: 'ease in out', // default easing for AOS animations
+});
 const About = () => {
     return (
         <div id="about me" className=" py-20 w-full">
             {/* <h1 className="text-4xl text-center font-bold">About Me</h1>
             <Underline lineLength={"200"} /> */}
 
-            <div className="md:flex  w-full  gap-10">
-                <div className="md:w-1/2">
+            <div className="md:flex  w-full  gap-10" >
+                <div className="md:w-1/2" data-aos='fade-right'>
                     <img className="w-full" src={photo} alt="" />
                 </div>
-                <div className="w-full mt-5 md:mt-0">
+                <div className="w-full mt-5 md:mt-0" data-aos='fade-top'>
                     <h1 className="text-5xl font-bold mb-3">About Me</h1>
 
                     <h2 className="text-2xl font-bold mb-3 ">Front-End Developer</h2>

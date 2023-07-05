@@ -2,10 +2,20 @@ import { TypeAnimation } from 'react-type-animation';
 import photo from '../../assets/photo.jpg'
 import Resume from '../../assets/Resume.pdf'
 import { Link } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+    delay: 400,
+    duration: 1000,
+    easing: 'ease-in-out'
+});
+
+
 const Home = () => {
     return (
         <div id='home' className='flex flex-col-reverse md:flex-row  my-10 justify-between md:gap-10 min-h-screen items-center  w-full'>
-            <div className='md:w-1/2 '>
+            <div className='md:w-1/2 ' data-aos="fade-right">
                 <h3 className="text-2xl font-bold text-white">Hello I am</h3>
                 <h1 className="text-5xl font-bold text-white my-7">Habibur Rahman</h1>
                 <h4 className=" text-lg">
@@ -46,7 +56,7 @@ const Home = () => {
                     </Link>
                 </button>
             </div>
-            <div className='md:w-1/2 my-5 md:my-auto'>
+            <div className='md:w-1/2 my-5 md:my-auto' data-aos="fade-left">
                 <img className=' rounded-full' src={photo} alt="" />
             </div>
         </div>
