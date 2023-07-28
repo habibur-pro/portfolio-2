@@ -10,7 +10,7 @@ const SocialLinks = () => {
                 </Link>
             </li>
             <li className='p-2 bg-primary text-white rounded-md hover:scale-125 duration-200'>
-                <Link to="https://www.linkedin.com/in/md-habibur-rahman-76b213224/" target='_blank'>
+                <Link to="https://www.linkedin.com/in/md-habibur-rahman4542" target='_blank'>
                     <FaLinkedinIn />
                 </Link>
 
